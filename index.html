@@ -1,215 +1,296 @@
 <!DOCTYPE html>
+<!-- 
+  ARVIND SWAMI GANESHAN - PROFESSIONAL PORTFOLIO
+  Version: 3.1
+  Description: Data Engineer & Data Governance Specialist portfolio
+  Features: Responsive design, hexagonal hero image, floating stats cards, timeline experience
+  Author: Arvind Swami Ganeshan
+  Last Updated: January 2025
+-->
 <html lang="en-GB">
 <head>
   <meta charset="UTF-8">
+  <!-- Viewport meta for responsive mobile design -->
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
-  <title>Arvind Swami Ganeshan | Data Engineer & Data Governance Specialist</title>
+  <!-- ==================== SEO META TAGS ==================== -->
+  <title>Arvind Swami Ganeshan | Data Engineer & Data Governance Specialist | UK</title>
   <meta name="description" content="Data Engineer with 5+ years at BNP Paribas and LexisNexis. Expert in Python, SQL, Oracle, GDPR, ISO 27001. Available immediately for UK roles.">
+  <meta name="keywords" content="Data Engineer UK, Data Governance, GDPR, ISO 27001, Python, SQL, Oracle, BNP Paribas, LexisNexis, Cranfield, Immediate Start, EMEA">
+  <meta name="author" content="Arvind Swami Ganeshan">
+  <meta name="robots" content="index, follow">
   
+  <!-- Open Graph for social sharing -->
+  <meta property="og:title" content="Arvind Swami Ganeshan | Data Engineer & Data Governance Specialist">
+  <meta property="og:description" content="5+ years enterprise data engineering. GDPR/ISO 27001 compliance. Available for UK roles.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://arvindswami014.github.io">
+  
+  <!-- ==================== FONTS & ICONS ==================== -->
+  <!-- Inter: Primary body font (clean, professional) -->
+  <!-- DM Serif Display: Decorative headings (elegant contrast) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=DM+Serif+Display&display=swap" rel="stylesheet">
+  <!-- Font Awesome 6.5: Icons for UI elements -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   
+  <!-- ==================== STYLESHEET ==================== -->
+  <!-- Main CSS: Contains all layout, colors, animations, responsive rules -->
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
 
-  <!-- Navigation -->
-  <nav class="nav">
+  <!-- ==================== NAVIGATION ==================== -->
+  <!-- Fixed position: Stays at top during scroll -->
+  <!-- Includes: Logo, menu links, CTA button -->
+  <nav class="nav" role="navigation" aria-label="Main navigation">
     <div class="nav-container">
-      <a href="#" class="nav-logo">
-        <span class="logo-dot"></span>
+      <!-- Logo: Dot indicator + name -->
+      <a href="#" class="nav-logo" aria-label="Home">
+        <span class="logo-dot" aria-hidden="true"></span>
         Arvind.
       </a>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact" class="nav-hire">Hire Me</a></li>
+      
+      <!-- Navigation links: Smooth scroll to sections -->
+      <ul class="nav-links" role="menubar">
+        <li role="none"><a href="#about" role="menuitem">About</a></li>
+        <li role="none"><a href="#experience" role="menuitem">Experience</a></li>
+        <li role="none"><a href="#projects" role="menuitem">Projects</a></li>
+        <!-- CTA button: Different styling to stand out -->
+        <li role="none"><a href="#contact" class="nav-hire" role="menuitem">Hire Me</a></li>
       </ul>
     </div>
   </nav>
 
-  <!-- Hero Section -->
-  <section class="hero">
+  <!-- ==================== HERO SECTION ==================== -->
+  <!-- 3-column layout: Text | Photo | Skills -->
+  <!-- Key features: Hexagonal photo frame, floating stat cards, gradient background -->
+  <header class="hero" role="banner">
     <div class="hero-container">
       
-      <!-- Left Content -->
+      <!-- LEFT COLUMN: Introduction -->
       <div class="hero-left">
+        <!-- Availability badge: Immediate start indicator -->
         <div class="hero-label">Based in UK • Available Immediately</div>
         
+        <!-- Main headline: Serif font for elegance -->
         <h1 class="hero-title">
           Data Engineer<br>
           <span class="ampersand">&</span> Governance<br>
           Specialist
         </h1>
         
+        <!-- Lead paragraph: Value proposition -->
         <p class="hero-subtitle">
           Building enterprise data pipelines with GDPR, ISO 27001 & NIST compliance. 
           5+ years delivering for BNP Paribas EMEA and LexisNexis UK/US.
         </p>
         
+        <!-- Primary CTA: Scroll to contact section -->
         <a href="#contact" class="hero-cta">
-          Get in Touch <i class="fa-solid fa-arrow-right"></i>
+          Get in Touch <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
         </a>
         
-        <div class="hero-socials">
-          <a href="https://linkedin.com/in/arvindswami014" target="_blank"><i class="fa-brands fa-linkedin-in"></i></a>
-          <a href="https://github.com/arvindswami014" target="_blank"><i class="fa-brands fa-github"></i></a>
-          <a href="https://wa.me/447767978917" target="_blank"><i class="fa-brands fa-whatsapp"></i></a>
+        <!-- Social proof: LinkedIn, GitHub, WhatsApp -->
+        <div class="hero-socials" aria-label="Social media links">
+          <a href="https://linkedin.com/in/arvindswami014" target="_blank" rel="noopener" aria-label="LinkedIn Profile">
+            <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
+          </a>
+          <a href="https://github.com/arvindswami014" target="_blank" rel="noopener" aria-label="GitHub Profile">
+            <i class="fa-brands fa-github" aria-hidden="true"></i>
+          </a>
+          <a href="https://wa.me/447767978917" target="_blank" rel="noopener" aria-label="WhatsApp Contact">
+            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
+          </a>
         </div>
       </div>
       
-      <!-- Center Photo -->
+      <!-- CENTER COLUMN: Visual centerpiece -->
+      <!-- Hexagonal photo with floating statistics cards -->
       <div class="hero-center">
         <div class="photo-wrapper">
           <div class="photo-hex">
             <div class="photo-inner">
-			<img src="./photo.jpg" alt="Arvind Swami Ganeshan">
-              <!-- Profile Photo -->
-              <img src="./photo.jpg" alt="Arvind Swami Ganeshan">
+              <!-- PROFILE PHOTO: Replace with your image named 'photo.jpg' -->
+              <!-- Image is clipped to hexagon shape via CSS clip-path -->
+              <img src="./photo.jpg" alt="Arvind Swami Ganeshan - Data Engineer">
             </div>
-            <div class="hex-bg"></div>
+            <!-- Decorative purple hexagon behind photo -->
+            <div class="hex-bg" aria-hidden="true"></div>
           </div>
           
-          <!-- Floating Info Cards -->
-          <div class="info-card card-top">
+          <!-- FLOATING STATISTICS CARDS: Positioned absolutely around photo -->
+          <!-- These float over the photo with higher z-index -->
+          <div class="info-card card-top" aria-label="Years of experience">
             <span class="card-num">5+</span>
             <span class="card-label">Years Exp.</span>
           </div>
           
-          <div class="info-card card-right">
+          <div class="info-card card-right" aria-label="Servers managed">
             <span class="card-num">30K+</span>
             <span class="card-label">Servers</span>
           </div>
           
-          <div class="info-card card-bottom">
+          <div class="info-card card-bottom" aria-label="SLA uptime percentage">
             <span class="card-num">99.9%</span>
             <span class="card-label">SLA Uptime</span>
           </div>
           
-          <div class="info-card card-left">
-            <span class="card-icon"><i class="fa-solid fa-shield-check"></i></span>
+          <div class="info-card card-left" aria-label="Compliance certification">
+            <span class="card-icon"><i class="fa-solid fa-shield-check" aria-hidden="true"></i></span>
             <span class="card-label">ISO 27001</span>
           </div>
         </div>
       </div>
       
-      <!-- Right Content -->
+      <!-- RIGHT COLUMN: Skills preview & download -->
       <div class="hero-right">
-        <div class="skills-preview">
+        <!-- Quick skills list: Visual balance for right side -->
+        <div class="skills-preview" aria-label="Key technical skills">
           <div class="skill-item">
-            <span class="skill-dot"></span>
+            <span class="skill-dot" aria-hidden="true"></span>
             <span>Python</span>
           </div>
           <div class="skill-item">
-            <span class="skill-dot"></span>
+            <span class="skill-dot" aria-hidden="true"></span>
             <span>SQL/Oracle</span>
           </div>
           <div class="skill-item">
-            <span class="skill-dot"></span>
+            <span class="skill-dot" aria-hidden="true"></span>
             <span>Azure</span>
           </div>
           <div class="skill-item">
-            <span class="skill-dot"></span>
+            <span class="skill-dot" aria-hidden="true"></span>
             <span>GDPR</span>
           </div>
           <div class="skill-item">
-            <span class="skill-dot"></span>
+            <span class="skill-dot" aria-hidden="true"></span>
             <span>Airflow</span>
           </div>
         </div>
         
-        <a href="./Arvind_Swami_Ganeshan_CV.pdf" download class="cv-link">
-          <i class="fa-solid fa-download"></i>
+        <!-- CV Download: PDF should be named exactly as referenced -->
+        <a href="./Arvind_Swami_Ganeshan_CV.pdf" download class="cv-link" aria-label="Download CV PDF">
+          <i class="fa-solid fa-download" aria-hidden="true"></i>
           Download CV
         </a>
       </div>
       
     </div>
-  </section>
+  </header>
 
-  <!-- Experience Section -->
-  <section id="experience" class="experience">
+  <!-- ==================== EXPERIENCE SECTION ==================== -->
+  <!-- Timeline layout: Vertical line with job entries -->
+  <!-- Data populated dynamically via renderer.js from content.js -->
+  <section id="experience" class="experience" aria-labelledby="exp-heading">
     <div class="section-container">
-      <div class="section-header">
+      <header class="section-header">
         <span class="section-label">Career Journey</span>
-        <h2 class="section-title">My Work Experience</h2>
-      </div>
+        <h2 id="exp-heading" class="section-title">My Work Experience</h2>
+      </header>
       
-      <div id="experience-timeline" class="timeline"></div>
+      <!-- Timeline container: JS injects content here -->
+      <!-- Structure: Vertical line with alternating entries -->
+      <div id="experience-timeline" class="timeline" role="list" aria-label="Work experience timeline">
+        <!-- Content injected by renderer.js -->
+      </div>
     </div>
   </section>
 
-  <!-- Projects Section -->
-  <section id="projects" class="projects">
+  <!-- ==================== PROJECTS SECTION ==================== -->
+  <!-- Dark section with 3-column card grid -->
+  <!-- Highlights key deliverables with metrics -->
+  <section id="projects" class="projects" aria-labelledby="proj-heading">
     <div class="section-container">
-      <div class="section-header">
+      <header class="section-header">
         <span class="section-label">Key Deliverables</span>
-        <h2 class="section-title">Featured Projects</h2>
-      </div>
+        <h2 id="proj-heading" class="section-title">Featured Projects</h2>
+      </header>
       
-      <div id="projects-grid" class="projects-grid"></div>
+      <!-- Projects grid: JS injects cards here -->
+      <div id="projects-grid" class="projects-grid" role="list" aria-label="Featured projects">
+        <!-- Content injected by renderer.js -->
+      </div>
     </div>
   </section>
 
-  <!-- Skills Section -->
-  <section id="about" class="skills">
+  <!-- ==================== SKILLS SECTION ==================== -->
+  <!-- Light background with 4-column skill blocks -->
+  <!-- Highlighted block for Data Governance (key differentiator) -->
+  <section id="about" class="skills" aria-labelledby="skills-heading">
     <div class="section-container">
-      <div class="section-header">
+      <header class="section-header">
         <span class="section-label">Expertise</span>
-        <h2 class="section-title">Core Competencies</h2>
-      </div>
+        <h2 id="skills-heading" class="section-title">Core Competencies</h2>
+      </header>
       
-      <div class="skills-grid">
-        <div class="skill-block">
-          <h3><i class="fa-solid fa-database"></i> Data Engineering</h3>
+      <div class="skills-grid" role="list" aria-label="Technical competencies">
+        <!-- Data Engineering -->
+        <article class="skill-block" role="listitem">
+          <h3><i class="fa-solid fa-database" aria-hidden="true"></i> Data Engineering</h3>
           <p>Python, SQL, PL/SQL, Apache Spark, Airflow, Kafka, ETL/ELT pipelines</p>
-        </div>
-        <div class="skill-block highlight">
-          <h3><i class="fa-solid fa-shield-halved"></i> Data Governance</h3>
+        </article>
+        
+        <!-- Data Governance: Highlighted as key strength -->
+        <article class="skill-block highlight" role="listitem">
+          <h3><i class="fa-solid fa-shield-halved" aria-hidden="true"></i> Data Governance</h3>
           <p>UK GDPR, ISO 27001, NIST, File Integrity Monitoring, Data Lineage</p>
-        </div>
-        <div class="skill-block">
-          <h3><i class="fa-solid fa-cloud"></i> Cloud & DevOps</h3>
+        </article>
+        
+        <!-- Cloud & DevOps -->
+        <article class="skill-block" role="listitem">
+          <h3><i class="fa-solid fa-cloud" aria-hidden="true"></i> Cloud & DevOps</h3>
           <p>Microsoft Azure, Data Factory, CI/CD, Jenkins, Ansible, Docker</p>
-        </div>
-        <div class="skill-block">
-          <h3><i class="fa-solid fa-robot"></i> Generative AI</h3>
+        </article>
+        
+        <!-- AI/ML Skills -->
+        <article class="skill-block" role="listitem">
+          <h3><i class="fa-solid fa-robot" aria-hidden="true"></i> Generative AI</h3>
           <p>LLM Training, Prompt Engineering, Outlier.ai Generalist</p>
-        </div>
+        </article>
       </div>
     </div>
   </section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="contact">
+  <!-- ==================== CONTACT SECTION ==================== -->
+  <!-- Centered card with multiple contact methods -->
+  <!-- Preferred method (WhatsApp) highlighted with badge -->
+  <section id="contact" class="contact" aria-labelledby="contact-heading">
     <div class="section-container">
-      <div class="contact-card">
-        <span class="contact-label">Let's Connect</span>
-        <h2 class="contact-title">Ready for Your<br>Next Data Challenge</h2>
+      <article class="contact-card">
+        <header>
+          <span class="contact-label">Let's Connect</span>
+          <h2 id="contact-heading" class="contact-title">Ready for Your<br>Next Data Challenge</h2>
+        </header>
         
-        <div class="contact-methods">
-          <a href="mailto:arvindswami014@gmail.com" class="contact-item">
-            <i class="fa-solid fa-envelope"></i>
+        <!-- Contact methods: Email, WhatsApp (preferred), LinkedIn -->
+        <div class="contact-methods" role="list" aria-label="Contact methods">
+          
+          <!-- Email -->
+          <a href="mailto:arvindswami014@gmail.com" class="contact-item" role="listitem">
+            <i class="fa-solid fa-envelope" aria-hidden="true"></i>
             <div>
               <span class="method-name">Email</span>
               <span class="method-val">arvindswami014@gmail.com</span>
             </div>
           </a>
           
-          <a href="https://wa.me/447767978917" target="_blank" class="contact-item preferred">
-            <i class="fa-brands fa-whatsapp"></i>
+          <!-- WhatsApp: Marked as preferred/fastest -->
+          <a href="https://wa.me/447767978917" target="_blank" rel="noopener" class="contact-item preferred" role="listitem">
+            <i class="fa-brands fa-whatsapp" aria-hidden="true"></i>
             <div>
-              <span class="method-name">WhatsApp <span class="badge-fast">Fast</span></span>
+              <span class="method-name">
+                WhatsApp 
+                <span class="badge-fast">Fast</span>
+              </span>
               <span class="method-val">+44 7767 978917</span>
             </div>
           </a>
           
-          <a href="https://linkedin.com/in/arvindswami014" target="_blank" class="contact-item">
-            <i class="fa-brands fa-linkedin-in"></i>
+          <!-- LinkedIn -->
+          <a href="https://linkedin.com/in/arvindswami014" target="_blank" rel="noopener" class="contact-item" role="listitem">
+            <i class="fa-brands fa-linkedin-in" aria-hidden="true"></i>
             <div>
               <span class="method-name">LinkedIn</span>
               <span class="method-val">arvindswami014</span>
@@ -217,21 +298,33 @@
           </a>
         </div>
         
-        <div class="contact-footer">
+        <!-- Footer note: Availability status -->
+        <footer class="contact-footer">
           <span class="availability">
-            <span class="pulse"></span>
+            <span class="pulse" aria-hidden="true"></span>
             Available Immediately • UK Graduate Route
           </span>
-        </div>
-      </div>
+        </footer>
+      </article>
     </div>
   </section>
 
-  <footer class="footer">
-    <p>&copy; 2025 Arvind Swami Ganeshan</p>
+  <!-- ==================== FOOTER ==================== -->
+  <!-- Simple copyright and build info -->
+  <footer class="footer" role="contentinfo">
+    <p>&copy; 2025 Arvind Swami Ganeshan. All rights reserved.</p>
   </footer>
 
+  <!-- ==================== JAVASCRIPT ==================== -->
+  <!-- content.js: Data source (portfolio information) -->
   <script src="./content.js"></script>
+  <!-- renderer.js: DOM manipulation and content injection -->
   <script src="./renderer.js"></script>
+  
+  <!-- 
+    NOTE: To update content, edit content.js 
+    To change styling, edit styles.css
+    No build process required - vanilla HTML/CSS/JS
+  -->
 </body>
 </html>
