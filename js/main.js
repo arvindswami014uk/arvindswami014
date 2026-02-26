@@ -1,6 +1,6 @@
 /**
- * Professional SRE Portfolio — Main JavaScript
- * Light theme, UK-standard professional design
+ * SRE Portfolio — Main JavaScript
+ * Professional UK Standard — Light Theme
  */
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -10,14 +10,11 @@ document.addEventListener('DOMContentLoaded', () => {
     initActiveNav();
 });
 
-// ==========================================
-// NAVIGATION
-// ==========================================
-
+// Navigation
 function initNavigation() {
     const navbar = document.getElementById('navbar');
-    const toggle = document.getElementById('navToggle');
-    const navLinks = document.getElementById('navLinks');
+    const toggle = document.getElementById('navtoggle');
+    const navLinks = document.getElementById('navlinks');
 
     // Scroll effect
     window.addEventListener('scroll', () => {
@@ -39,10 +36,7 @@ function initNavigation() {
     });
 }
 
-// ==========================================
-// ANIMATED COUNTERS
-// ==========================================
-
+// Animated counters
 function initCounters() {
     const counters = document.querySelectorAll('.stat-value[data-target]');
     
@@ -72,7 +66,7 @@ function animateCounter(element, target, suffix) {
     function update(currentTime) {
         const elapsed = currentTime - startTime;
         const progress = Math.min(elapsed / duration, 1);
-        const easeProgress = 1 - Math.pow(1 - progress, 3); // ease-out cubic
+        const easeProgress = 1 - Math.pow(1 - progress, 3);
         
         const current = Math.floor(easeProgress * target);
         element.textContent = current + (progress < 1 ? '' : suffix);
@@ -85,10 +79,7 @@ function animateCounter(element, target, suffix) {
     requestAnimationFrame(update);
 }
 
-// ==========================================
-// SMOOTH SCROLL
-// ==========================================
-
+// Smooth scroll
 function initSmoothScroll() {
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
@@ -108,10 +99,7 @@ function initSmoothScroll() {
     });
 }
 
-// ==========================================
-// ACTIVE NAVIGATION LINKS
-// ==========================================
-
+// Active navigation
 function initActiveNav() {
     const sections = document.querySelectorAll('section[id]');
     const navLinks = document.querySelectorAll('.nav-links a');
@@ -133,11 +121,8 @@ function initActiveNav() {
     sections.forEach(s => observer.observe(s));
 }
 
-// ==========================================
-// CONTACT FORM
-// ==========================================
-
-const contactForm = document.getElementById('contactForm');
+// Contact form
+const contactForm = document.getElementById('contactform');
 if (contactForm) {
     contactForm.addEventListener('submit', async (e) => {
         e.preventDefault();
@@ -181,10 +166,7 @@ if (contactForm) {
     });
 }
 
-// ==========================================
-// REDUCED MOTION SUPPORT
-// ==========================================
-
+// Reduced motion
 if (window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
     document.documentElement.style.scrollBehavior = 'auto';
 }
